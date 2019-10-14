@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPH.Oftamed.CorectiePio"
+             Title="Corectie Pio"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Margin="10">
+                    <Label Text="Introduceti presiunea intraoculara:" FontSize="Large"/>
+                    <Entry x:Name="pioEntry" Placeholder="PIO (mmHg)" FontSize="Large"/>
+
+                    <Label Text="Introduceti grosimea corneei:" FontSize="Large"/>
+                    <Entry x:Name="cctEntry" Placeholder="CCT (micrometri)" FontSize="Large"/>
+                    <Label x:Name="errorLabel" TextColor="Red" FontSize="Large"/>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Calculeaza" Clicked="Calculeaza_Clicked" 
+                        BackgroundColor="Gray"
+                        TextColor="White"
+                        Margin="5" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

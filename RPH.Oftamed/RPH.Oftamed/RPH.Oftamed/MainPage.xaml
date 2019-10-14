@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPH.Oftamed.MainPage"
+             Title="Oftamed"
+             BackgroundColor="White">
+    
+    <ContentPage.ToolbarItems> 
+        <ToolbarItem Text="ToU" Clicked="ToU_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="2" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2" />
+        </Grid.ColumnDefinitions>
+
+
+        <Image Grid.Row="1" Grid.Column="1" Source="http://rompharm.ro/img/logo.png" />
+        <Image Grid.Row="2" Grid.Column="1" Source="http://corectie-pio.ro/img/Bimatoprost%20Timolol%20RO%20(003).jpg" />
+
+        <Button Text="Ghid medicamente"
+                Clicked="GhidMedicamente_Clicked"
+                BackgroundColor="Gray"
+                TextColor="White"
+                Grid.Row="3" Grid.Column="1"/>
+
+        <Button Text="Corectie PIO"
+                Clicked="CorectiePio_Clicked"
+                BackgroundColor="Gray"
+                TextColor="White"
+                Grid.Row="4" Grid.Column="1"/>
+
+        <Button Text="Risc glaucom"
+                Clicked="RiscGlaucom_Clicked"
+                BackgroundColor="Gray"
+                TextColor="White"
+                Grid.Row="5" Grid.Column="1"/>
+        
+    </Grid>
+</ContentPage>

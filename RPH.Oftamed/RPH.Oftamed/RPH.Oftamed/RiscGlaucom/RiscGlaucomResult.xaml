@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPH.Oftamed.RiscGlaucomResult"
+             Title="Risc glaucom"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Margin="10">
+                    <Label x:Name="rezLabel" Text="Riscul estimat este de " Font="Bold" FontSize="Large"/>
+                    <Image HeightRequest="300" WidthRequest="217" Source="http://corectie-pio.ro/img/Bimatoprost%20Timolol%20RO%20(003).jpg" />
+                    <Label x:Name="ageLabel" Text="Age(years): " FontSize="Large"/>
+                    <Label x:Name="iopLabel" Text="Baseline IOP(mmHg): " FontSize="Large"/>
+                    <Label x:Name="psdLabel" Text="Pattern Standard Deviation(dB): " FontSize="Large"/>
+                    <Label x:Name="cctLabel" Text="Central Corneal Thickness(microns): " FontSize="Large"/>
+                    <Label x:Name="vcdLabel" Text="Vertical Cup to Disc: " FontSize="Large"/>
+                    <Label x:Name="dmLabel" Text="Diabetes: " FontSize="Large"/>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Calcul nou" Clicked="CalculNou_Clicked"
+                        BackgroundColor="Gray"
+                        TextColor="White"
+                        Margin="5" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

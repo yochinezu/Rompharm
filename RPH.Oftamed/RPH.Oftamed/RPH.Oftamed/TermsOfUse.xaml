@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RPH.Oftamed.TermsOfUse" Title="Terms of Use"
+             BackgroundColor="White">
+    <ContentPage.Content>
+    
+    <Label Margin="5">
+    1. Informatiile folosite de catre aplicatia Oftamed sunt publice personalului medical. Prin instalarea software-ului va asumati complet faptul ca utilizarea se face pe propriul risc, iar dezvoltatorii nu isi asuma responsabilitatea asupra acuratetei si performantei programului.
+    </Label>
+        
+    </ContentPage.Content>
+</ContentPage>

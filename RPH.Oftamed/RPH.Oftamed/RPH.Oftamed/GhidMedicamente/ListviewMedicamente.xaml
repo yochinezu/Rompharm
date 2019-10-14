@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPH.Oftamed.ListviewMedicamente"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="MedList"
+                      ItemTapped="MedList_ItemTapped"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="5">
+                                <Image Source="{Binding ImgSourceCompany}" HeightRequest="30" WidthRequest="50" HorizontalOptions="Start"></Image>
+                                <StackLayout Orientation="Vertical">
+                                    <Label Text="{Binding DenumireComerciala}" Font="18" FontAttributes="{Binding FontBold}"></Label>
+                                    <Label Text="{Binding FormaFarmaceutica}" TextColor="Gray"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

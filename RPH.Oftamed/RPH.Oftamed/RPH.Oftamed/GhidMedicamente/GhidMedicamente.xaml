@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPH.Oftamed.GhidMedicamente"
+             Title="Ghid Medicamente"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+
+                <ListView x:Name="GhidList"
+                      ItemTapped="GhidList_ItemTapped"
+                      HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" Padding="5">
+                                    <Image Source="http://corectie-pio.ro/icon.png" HeightRequest="30" WidthRequest="50" HorizontalOptions="Start"></Image>
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Text="{Binding Ghid}" Font="20" FontAttributes="Bold"></Label>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="5" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+                <Image Grid.Row="0" Grid.Column="0"
+                    Source="http://corectie-pio.ro/img/Bimatoprost%20Timolol%20RO%20(003).jpg" />
+                <Image Grid.Row="0" Grid.Column="1"
+                    Source="http://corectie-pio.ro/img/Bimagan%200%201%203d.png" />
+                <Image Grid.Row="1" Grid.Column="0"
+                    Source="http://corectie-pio.ro/img/Bimagan.jpg" />
+                <Image Grid.Row="1" Grid.Column="1"
+                    Source="http://corectie-pio.ro/img/Dorzopt.jpg" />
+                <Image Grid.Row="2" Grid.Column="0"
+                    Source="http://corectie-pio.ro/img/Glautan.jpg" />
+                <Image Grid.Row="2" Grid.Column="1"
+                    Source="http://corectie-pio.ro/img/Glautan%20Plus.jpg" />
+                
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RPH.Oftamed.RiscGlaucom"
+             Title="Risc glaucom"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout Margin="10">
+                    <Label Text="Age(years):" FontSize="Large"/>
+                    <Entry x:Name="ageEntry" Placeholder="40 - 90" FontSize="Large"/>
+
+                    <Label Text="Baseline IOP(mmHg):" FontSize="Large"/>
+                    <Entry x:Name="iopEntry" Placeholder="22 - 32" FontSize="Large"/>
+
+                    <Label Text="Pattern Standard Deviation(dB):" FontSize="Large"/>
+                    <Entry x:Name="psdEntry" Placeholder="0.50 - 4.00" FontSize="Large"/>
+
+                    <Label Text="Central Corneal Thickness(microns):" FontSize="Large"/>
+                    <Entry x:Name="cctEntry" Placeholder="450 - 700" FontSize="Large"/>
+
+                    <Label Text="Vertical Cup to Disc:" FontSize="Large" />
+                    <Entry x:Name="vcdEntry" Placeholder="0 - 0.9" FontSize="Large" />
+
+                    <Label Text="Diabetes:" FontSize="Large" />
+                    <Picker x:Name="dmEntry">
+                        <Picker.Items>
+                            <x:String>No</x:String>
+                            <x:String>Yes</x:String>
+                        </Picker.Items>
+                        <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                    </Picker>
+
+                    <Label x:Name="errorLabel" TextColor="Red" FontSize="Large"/>
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout VerticalOptions="EndAndExpand">
+                <Button Text="Calculeaza riscul"
+                        Clicked="Calculeaza_Clicked"
+                        BackgroundColor="Gray"
+                        TextColor="White"
+                        Margin="5" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

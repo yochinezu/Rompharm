@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RPH.Oftamed.MedicamentDetalii"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="White">
+    <ContentPage.Content>
+
+        <ScrollView>
+
+
+            <StackLayout Margin="10">
+                <Image
+                    x:Name="LogoRompharm"
+                    IsVisible="False"
+                    Source="http://rompharm.ro/img/logo.png" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Substanta: " />
+                <Label x:Name="SubstantaLabel" FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Forma farmaceutica: " />
+                <Label x:Name="FormaFarmaceuticaLabel" FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Denumire comerciala: " />
+                <Label x:Name="DenumireComercialaLabel" FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Co-plata pacient: " />
+                <Label
+                    x:Name="CoplataPacientLabel"
+                    Font="Bold"
+                    FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Pret farmacie: " />
+                <Label
+                    x:Name="PretFarmacieLabel"
+                    Font="Bold"
+                    FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Companie producatoare: " />
+                <Label x:Name="CompanieProducatoareLabel" FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Mod de actiune: " />
+                <Label x:Name="ModDeActiuneLabel" FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Reducere IOP: " />
+                <Label x:Name="ReducereIopLabel" FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Contra-indicatii: " />
+                <Label x:Name="ContraIndicatiiLabel" FontSize="Large" />
+
+                <Label
+                    Font="Bold"
+                    FontSize="Large"
+                    Text="Efecte adverse: " />
+                <Label x:Name="EfecteAdverseLabel" FontSize="Large" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
